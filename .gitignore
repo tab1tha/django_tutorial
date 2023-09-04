@@ -1,0 +1,11 @@
+# ignore django-tutorial folder since it is a venv
+django-tutorial/
+
+# ignore all .pyc files
+*.pyc
+
+# ignore all pycache 
+__pycache__/
+
+#ignore django db
+db.sqlite3
