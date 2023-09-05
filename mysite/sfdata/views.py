@@ -9,5 +9,11 @@ def files(request):
     return HttpResponse("a list of files")
 def upload(request):
     return HttpResponse("upload a file")
-def download(request):
-    return HttpResponse("download a file")
+def download(request, file_id):
+    return HttpResponse("download file %s" % file_id)
+def search(request, file_id):
+    return HttpResponse("searching for %s file" % file_id)
+def validate(request, file_id=None):
+    if file_id:
+        return HttpResponse("validation results for %s" %file_id) 
+    return HttpResponse("validating file")
