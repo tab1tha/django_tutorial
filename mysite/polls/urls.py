@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+app_name = "polls"
 # using anchor brackets captures part of the url and sends it as an argument to the view function. 
 # question_id is captured in this case.
 
