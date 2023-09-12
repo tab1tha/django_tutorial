@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404, render
 
 from .models import Question
 
-# a view can do one of two things: return and HttpResponse object or raise and exception.
+# a view can do one of two things: return and HttpResponse object or raise an exception.
 # the HttpResonse object contains the content of the page. no limits on what you can put in it.
 
 # Create your views here.
