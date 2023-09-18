@@ -3,7 +3,7 @@
     <ol>
     {% for file in file_list %}
         <!-- view_file is the url name defined in urls.py -->
-        <li><a href="{% url 'view_file' file.id %}">{{ file }}</a> (size: {{ file.size }} bytes).</li>
+        <li><a href="{% url 'sfdata:view_file' file.id %}">{{ file }}</a> (size: {{ file.size }} bytes).</li>
     {% endfor %}
     </ol>
 {% else %}
